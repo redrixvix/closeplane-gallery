@@ -1,0 +1,304 @@
+{"scenarios": [
+  {
+    "images": {
+      "expanded": "route_placeable_expanded.png",
+      "chip": "route_placeable_chip.png",
+      "collapsed": "route_placeable_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "chip": "device",
+      "collapsed": "jvm"
+    },
+    "name": "route_placeable",
+    "description": "Route ORD-PHL with known coordinates -> ProgressStyle route bar",
+    "chipRelevant": true,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "route_unplaceable_expanded.png",
+      "chip": "route_unplaceable_chip.png",
+      "collapsed": "route_unplaceable_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "chip": "device",
+      "collapsed": "jvm"
+    },
+    "name": "route_unplaceable",
+    "description": "Route ORD-ZZZ; ZZZ has no coordinates -> BigTextStyle fallback",
+    "chipRelevant": true,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "route_absent_expanded.png",
+      "chip": "route_absent_chip.png",
+      "collapsed": "route_absent_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "chip": "device",
+      "collapsed": "jvm"
+    },
+    "name": "route_absent",
+    "description": "No route -> BigTextStyle; chip falls back to callsign",
+    "chipRelevant": true,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "route_absent_no_callsign_expanded.png",
+      "chip": "route_absent_no_callsign_chip.png",
+      "collapsed": "route_absent_no_callsign_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "chip": "device",
+      "collapsed": "jvm"
+    },
+    "name": "route_absent_no_callsign",
+    "description": "No route, no callsign -> chip falls back to distance",
+    "chipRelevant": true,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "chip_mode_distance_expanded.png",
+      "chip": "chip_mode_distance_chip.png",
+      "collapsed": "chip_mode_distance_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "chip": "device",
+      "collapsed": "jvm"
+    },
+    "name": "chip_mode_distance",
+    "description": "LiveChipMode.Distance",
+    "chipRelevant": true,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "chip_mode_callsign_expanded.png",
+      "chip": "chip_mode_callsign_chip.png",
+      "collapsed": "chip_mode_callsign_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "chip": "device",
+      "collapsed": "jvm"
+    },
+    "name": "chip_mode_callsign",
+    "description": "LiveChipMode.Callsign",
+    "chipRelevant": true,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "chip_mode_speed_expanded.png",
+      "chip": "chip_mode_speed_chip.png",
+      "collapsed": "chip_mode_speed_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "chip": "device",
+      "collapsed": "jvm"
+    },
+    "name": "chip_mode_speed",
+    "description": "LiveChipMode.Speed",
+    "chipRelevant": true,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "chip_mode_speed_no_speed_expanded.png",
+      "chip": "chip_mode_speed_no_speed_chip.png",
+      "collapsed": "chip_mode_speed_no_speed_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "chip": "device",
+      "collapsed": "jvm"
+    },
+    "name": "chip_mode_speed_no_speed",
+    "description": "LiveChipMode.Speed with no ground speed -> falls back to distance",
+    "chipRelevant": true,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "chip_disabled_expanded.png",
+      "chip": "chip_disabled_chip.png",
+      "collapsed": "chip_disabled_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "chip": "device",
+      "collapsed": "jvm"
+    },
+    "name": "chip_disabled",
+    "description": "liveChipEnabled = false -> no chip, not promoted",
+    "chipRelevant": true,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "chip_suppressed_by_other_notifications_expanded.png",
+      "chip": "chip_suppressed_by_other_notifications_chip.png",
+      "collapsed": "chip_suppressed_by_other_notifications_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "chip": "device",
+      "collapsed": "jvm"
+    },
+    "name": "chip_suppressed_by_other_notifications",
+    "description": "Another app posted a notification -> chip text suppressed",
+    "chipRelevant": true,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "chip_test_text_override_expanded.png",
+      "chip": "chip_test_text_override_chip.png",
+      "collapsed": "chip_test_text_override_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "chip": "device",
+      "collapsed": "jvm"
+    },
+    "name": "chip_test_text_override",
+    "description": "liveChipTestText overrides the computed chip string",
+    "chipRelevant": true,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "direction_on_expanded.png",
+      "collapsed": "direction_on_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "collapsed": "jvm"
+    },
+    "name": "direction_on",
+    "description": "directionAwareEnabled adds a bearing line to expanded text",
+    "chipRelevant": false,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "hex_code_on_expanded.png",
+      "collapsed": "hex_code_on_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "collapsed": "jvm"
+    },
+    "name": "hex_code_on",
+    "description": "showAircraftHexCode adds a Hex line to expanded text",
+    "chipRelevant": false,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "altitude_flight_level_expanded.png",
+      "collapsed": "altitude_flight_level_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "collapsed": "jvm"
+    },
+    "name": "altitude_flight_level",
+    "description": "AltitudeFormat.FlightLevel instead of 37,000 ft",
+    "chipRelevant": false,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "settings_action_expanded.png",
+      "collapsed": "settings_action_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "collapsed": "jvm"
+    },
+    "name": "settings_action",
+    "description": "showNotificationSettingsAction adds a Settings action button",
+    "chipRelevant": false,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "all_details_on_expanded.png",
+      "collapsed": "all_details_on_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "collapsed": "jvm"
+    },
+    "name": "all_details_on",
+    "description": "Direction + hex + settings action + flight level together",
+    "chipRelevant": false,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "lifecycle_searching_expanded.png",
+      "collapsed": "lifecycle_searching_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "collapsed": "jvm"
+    },
+    "name": "lifecycle_searching",
+    "description": "searching(): waiting for location and ADS-B data",
+    "chipRelevant": false,
+    "group": "Lifecycle"
+  },
+  {
+    "images": {
+      "expanded": "lifecycle_no_aircraft_expanded.png",
+      "collapsed": "lifecycle_no_aircraft_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "collapsed": "jvm"
+    },
+    "name": "lifecycle_no_aircraft",
+    "description": "noAircraft(): nothing within the radius",
+    "chipRelevant": false,
+    "group": "Lifecycle"
+  },
+  {
+    "images": {
+      "expanded": "lifecycle_error_expanded.png",
+      "collapsed": "lifecycle_error_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "collapsed": "jvm"
+    },
+    "name": "lifecycle_error",
+    "description": "error(): tracking continues after a failure",
+    "chipRelevant": false,
+    "group": "Lifecycle"
+  },
+  {
+    "images": {
+      "expanded": "lifecycle_searching_with_settings_action_expanded.png",
+      "collapsed": "lifecycle_searching_with_settings_action_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "collapsed": "jvm"
+    },
+    "name": "lifecycle_searching_with_settings_action",
+    "description": "searching() with the Settings action visible",
+    "chipRelevant": false,
+    "group": "Lifecycle"
+  }
+]}
