@@ -247,6 +247,62 @@
   },
   {
     "images": {
+      "expanded": "photo_with_route_expanded.png",
+      "collapsed": "photo_with_route_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "collapsed": "jvm"
+    },
+    "name": "photo_with_route",
+    "description": "Aircraft photo as large icon, alongside the ProgressStyle route bar",
+    "chipRelevant": false,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "photo_without_route_expanded.png",
+      "collapsed": "photo_without_route_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "collapsed": "jvm"
+    },
+    "name": "photo_without_route",
+    "description": "Aircraft photo as large icon on the BigTextStyle fallback",
+    "chipRelevant": false,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "photo_square_crop_expanded.png",
+      "collapsed": "photo_square_crop_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "collapsed": "jvm"
+    },
+    "name": "photo_square_crop",
+    "description": "Square photo, to catch layouts that assume a wide aircraft shot",
+    "chipRelevant": false,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "photo_with_settings_action_expanded.png",
+      "collapsed": "photo_with_settings_action_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "collapsed": "jvm"
+    },
+    "name": "photo_with_settings_action",
+    "description": "Aircraft photo competing with the Settings action for header space",
+    "chipRelevant": false,
+    "group": "Plane"
+  },
+  {
+    "images": {
       "expanded": "lifecycle_searching_expanded.png",
       "collapsed": "lifecycle_searching_collapsed.png"
     },

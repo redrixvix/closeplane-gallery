@@ -10,4 +10,4 @@ rendered off-device.
 Do not edit by hand. Regenerate with `scripts/update-ui-gallery.sh` and
 republish with `scripts/publish-gallery.sh` in the source repo.
 
-Source commit: `4e304a7`
+Source commit: `c22a231`
