@@ -185,7 +185,7 @@
       "collapsed": "jvm"
     },
     "name": "direction_on",
-    "description": "directionAwareEnabled adds a bearing line to expanded text",
+    "description": "directionAwareEnabled adds a bearing line to the BigTextStyle body",
     "chipRelevant": false,
     "group": "Plane"
   },
@@ -199,7 +199,7 @@
       "collapsed": "jvm"
     },
     "name": "hex_code_on",
-    "description": "showAircraftHexCode adds a Hex line to expanded text",
+    "description": "showAircraftHexCode adds a Hex line to the BigTextStyle body",
     "chipRelevant": false,
     "group": "Plane"
   },
@@ -241,7 +241,35 @@
       "collapsed": "jvm"
     },
     "name": "all_details_on",
-    "description": "Direction + hex + settings action + flight level together",
+    "description": "Direction + hex + settings action + flight level together (no route, so the body renders)",
+    "chipRelevant": false,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "expanded_body_hidden_by_route_bar_expanded.png",
+      "collapsed": "expanded_body_hidden_by_route_bar_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "collapsed": "jvm"
+    },
+    "name": "expanded_body_hidden_by_route_bar",
+    "description": "Hex + direction requested, but a placeable route renders ProgressStyle and drops the body",
+    "chipRelevant": false,
+    "group": "Plane"
+  },
+  {
+    "images": {
+      "expanded": "compact_no_route_expanded.png",
+      "collapsed": "compact_no_route_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "collapsed": "jvm"
+    },
+    "name": "compact_no_route",
+    "description": "compactNotification drops the BigTextStyle body, leaving title + one line",
     "chipRelevant": false,
     "group": "Plane"
   },
