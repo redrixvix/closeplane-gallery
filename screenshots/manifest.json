@@ -261,6 +261,20 @@
   },
   {
     "images": {
+      "expanded": "route_bar_off_shows_details_expanded.png",
+      "collapsed": "route_bar_off_shows_details_collapsed.png"
+    },
+    "tiers": {
+      "expanded": "jvm",
+      "collapsed": "jvm"
+    },
+    "name": "route_bar_off_shows_details",
+    "description": "showRouteProgressBar = false: placeable route, but the detail body wins",
+    "chipRelevant": false,
+    "group": "Plane"
+  },
+  {
+    "images": {
       "expanded": "compact_no_route_expanded.png",
       "collapsed": "compact_no_route_collapsed.png"
     },
